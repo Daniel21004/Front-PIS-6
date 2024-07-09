@@ -1,0 +1,38 @@
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1.5rem 0 0;
+  /* Espacio entre el sidebar y el topbar */
+  margin-top: 4.5rem;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar .nav-link {
+  display: block;
+  /* Hace que los enlaces ocupen todo el ancho del contenedor */
+  padding: 10px 15px;
+  color: black;
+  /* Color de texto predeterminado */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* Borde inferior gris claro */
+  transition: background-color 0.3s ease;
+  /* Transición suave para el cambio de color de fondo */
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Cambia el color de fondo al pasar el mouse */
+}
+
+.sidebar_sticky {
+  position: relative;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scroll vertical si hay muchos elementos */
+}

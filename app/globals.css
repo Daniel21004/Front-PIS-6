@@ -1,0 +1,100 @@
+.spinner-border {
+  display: none;
+}
+
+.el1 {
+  background-color: red;
+}
+
+.el2 {
+  background-color: green;
+}
+
+.el3 {
+  background-color: blue;
+}
+
+/* Topbar */
+.topbar {
+  height: 4.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  /* Espacio entre el sidebar y el topbar */
+  padding: .5rem 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar .nav-link {
+  display: block;
+  /* Hace que los enlaces ocupen todo el ancho del contenedor */
+  padding: 10px 15px;
+  color: black;
+  /* Color de texto predeterminado */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* Borde inferior gris claro */
+  transition: background-color 0.3s ease;
+  /* Transición suave para el cambio de color de fondo */
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Cambia el color de fondo al pasar el mouse */
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scroll vertical si hay muchos elementos */
+}
+
+/* Sub sidebar */
+.sub-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 5rem;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sub-sidebar-sticky {
+  position: relative;
+  top: 0;
+  left: -100;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scroll vertical si hay muchos elementos */
+}
+
+.sub-sidebar .nav-link {
+  display: block;
+  /* Hace que los enlaces ocupen todo el ancho del contenedor */
+  padding: 10px 15px;
+  color: black;
+  /* Color de texto predeterminado */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* Borde inferior gris claro */
+  transition: background-color 0.3s ease;
+  /* Transición suave para el cambio de color de fondo */
+}
+
+.sub-sidebar .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Cambia el color de fondo al pasar el mouse */
+}
+
+#output{
+  height: 8rem;
+}
+
+#mainContent {
+  background-color: rgb(234, 234, 234);
+}
